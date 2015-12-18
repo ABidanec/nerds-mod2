@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Nerds 2</title>
+	<script src="js/modernizr-2.8.3.min.js"></script>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/catalog.css">
+<body>
+<div class="popUp">
+	<form action="" class="popUpForm">
+		<fieldset>
+			<label for="" class="yourName">
+				<p class="popUpLabelText">Ваше имя:</p>
+				<input type="text" class="popUpName" placeholder="Представтесь, пожалуйста">
+			</label>
+			<label for="" class="yourEmail">
+				<p class="popUpLabelText">Ваше e-mail:</p>
+				<input type="text" class="popUpEmail" placeholder="Для отправки ответа">
+			</label>
+			<label for="" class="yourText">
+				<p class="popUpLabelText">Текст письма:</p>
+				<textarea name="popUpText" id="" cols="30" rows="10" class="popUpText">В свободной форме</textarea>
+			</label>
+			<input type="submit" class="popUpSend" value="Отправить">
+			<input type="reset" class="popUpreset" value="Отмена">
+		</fieldset>
+	</form>
+</div>
+<!-- popUp -->
+	<div class="wrapper">
+		<header class="header">
+			<div class="centerLayout">
+				<section class="topHeader">
+					<div class="logo">
+					<a href="" class="logoLink">
+						<img src="img/logo.png" alt="Nerds" class="logoImg">
+					</a>
+					</div>
+					<!-- logo -->
+					<nav class="topMenu">
+						<ul class="topMetuList">
+							<li class="topMenuItem"><a href="" class="topMenuLink topMenuLinkActive">Студия</a></li>
+							<li class="topMenuItem"><a href="" class="topMenuLink">Клиенты</a></li>
+							<li class="topMenuItem"><a href="" class="topMenuLink">Магазин</a></li>
+							<li class="topMenuItem"><a href="" class="topMenuLink">Контакты</a></li>
+						</ul>
+					</nav>
+					<!-- topMenu -->
+					<div class="topBasket">
+						<a href="" class="topBasketLink topMenuLinkActive"><i class="icon-basket"></i>Корзина</a>
+					</div>
+					<!-- topBasket -->
+				</section>
+				<!-- topHeader -->
+				<h1 class="topHead">Добро пожаловать в магазин<br> готовых макетов</h1>
+			</div>
+			<!-- centerLayout -->
+		</header>
+		<!-- header -->
+		<section class="main">
+			<div class="centerLayout middleBlock">
+					<aside class="leftSidebar">
+						<form action="" class="filterProduct">
+							<fieldset>
+								<h3 class="filterProductHead">Стоимость:</h3>
+								<div class="rangeFilter">
+									<div class="rangeControls">
+										<div class="scale"><div style="width:70%" class="bar"></div></div>
+										<div class="toggle minToggle"></div>
+										<div class="toggle maxToggle"></div>
+									</div>
+									<div class="priceControls">
+										от <input type="text" class="minPrice" placeholder="0">
+										до <input type="text" class="maxPrice" placeholder="15 000">
+									</div>
+								</div>
+								<!-- rangeFilter -->
+								<h3 class="filterProductHead">Сетка:</h3>
+								<div class="gridInputList">
+									<div class="gridInputWrapper">
+										<input type="radio" id="gridInput1" name="gridInput" checked="checked" class="gridInputRadio">
+										<label for="gridInput1" class="gridInputRadioLabel">Адаптивная</label>
+									</div>
+									<div class="gridInputWrapper">
+										<input type="radio" id="gridInput2" name="gridInput" class="gridInputRadio">
+										<label for="gridInput2" class="gridInputRadioLabel">Фиксированная</label>
+									</div>
+									<div class="gridInputWrapper">
+										<input type="radio" id="gridInput3" name="gridInput" class="gridInputRadio">
+										<label for="gridInput3" class="gridInputRadioLabel">Резиновая</label>
+									</div>
+								</div>
+								<!-- gridInputList -->
+								<h3 class="filterProductHead">Особености:</h3>
+								<div class="inputFeaturesList">
+									<div class="gridInputWrapper">
+										<input type="checkbox" id="checkSlider" name="gridInput" class="especiallInputCheck">
+										<label for="checkSlider" class="gridInputRadioLabel">Слайдер</label>
+									</div>
+									<div class="gridInputWrapper">
+										<input type="checkbox" id="checkAdvantage" name="gridInput" class="especiallInputCheck">
+										<label for="checkAdvantage" class="gridInputRadioLabel">Блок преимуществ</label>
+									</div>
+									<div class="gridInputWrapper">
+										<input type="checkbox" id="checkNews" name="gridInput" class="especiallInputCheck">
+										<label for="checkNews" class="gridInputRadioLabel">Новости</label>
+									</div>
+									<div class="gridInputWrapper">
+										<input type="checkbox" id="checkGallery" name="gridInput" class="especiallInputCheck">
+										<label for="checkGallery" class="gridInputRadioLabel">Галерея</label>
+									</div>
+									<div class="gridInputWrapper">
+										<input type="checkbox" id="checkBasket" name="gridInput" class="especiallInputCheck">
+										<label for="checkBasket" class="gridInputRadioLabel">Корзина</label>
+									</div>
+								</div>
+								<!-- inputFeaturesList -->
+							</fieldset>
+						</form>
+						<!-- filterProduct -->
+					</aside>
+					<!-- leftSidebar -->
+					<section class="productList clearfix">
+						<div class="filterCategory">
+							<span class="filterCategoryHead">Сортировать:</span>
+							<ul class="filterCategoryList">
+								<li class="filterCategoryItem">по цене</li>
+								<li class="filterCategoryItem">по типу</li>
+								<li class="filterCategoryItem">по функционалу</li>
+							</ul>
+							<ul class="filterCategoryTravel">
+								<li class="filterCategoryTravelDown travelActive"><i class="icon-down-dir"></i></li>
+								<li class="filterCategoryTravelUp"><i class="icon-up-dir"></i></li>
+							</ul>
+						</div>
+						<!-- filterCategory -->
+						<ul class="worksList">
+							<li class="worksItem">
+								<a href="" class="worksLink">
+									<img src="pic/work/work1.jpg" width="240" height="240" alt="" class="worksImg">
+								</a>
+							</li>
+							<li class="worksItem">
+								<a href="" class="worksLink">
+									<img src="pic/work/work2.jpg" width="240" height="240" alt="" class="worksImg">
+								</a>
+							</li>
+							<li class="worksItem">
+								<a href="" class="worksLink">
+									<img src="pic/work/work3.jpg" width="240" height="240" alt="" class="worksImg">
+								</a>
+							</li>
+							<li class="worksItem">
+								<a href="" class="worksLink">
+									<img src="pic/work/work4.jpg" width="240" height="240" alt="" class="worksImg">
+								</a>
+							</li>
+							<li class="worksItem">
+								<a href="" class="worksLink">
+									<img src="pic/work/work5.jpg" width="240" height="240" alt="" class="worksImg">
+								</a>
+							</li>
+							<li class="worksItem">
+								<a href="" class="worksLink">
+									<img src="pic/work/work6.jpg" width="240" height="240" alt="" class="worksImg">
+								</a>
+							</li>
+						</ul>
+						<!-- orksList -->
+						<div class="pagination">
+							<div class="paginationPrev paginationNone">
+								<a href="" class="paginationPrevLink">Предыдущая</a>
+							</div>
+							<ul class="paginationList">
+								<li class="paginationItem thisItem"><a href="" class="paginationLink">1</a></li>
+								<li class="paginationItem"><a href="" class="paginationLink">2</a></li>
+								<li class="paginationItem"><a href="" class="paginationLink">3</a></li>
+							</ul>
+							<div class="paginationNext">
+								<a href="" class="paginationNextLink">Следующая</a>
+							</div>
+						</div>
+						<!-- pagination -->
+					</section>
+					<!-- productList -->
+			</div>
+			<!-- centerLayout -->
+		</section>
+		<!-- main -->
+	</div>
+	<!-- wrapper -->
+	<footer class="footer clearfix">
+		<article class="mapCompany">
+				<div class="centerLayout">
+					<div class="mapCompanyAddres">
+						<h3 class="mapCompanyAddresHead"><span>NЁRDS</span> DESIGN STUDIO</h3>
+						<p class="mapCompanyAddresText">350000, Краснодар,<br> ул. Головатого, 100</p>
+						<p class="mapCompanyAddresText">тел. +7 (861) 275-75-75</p>
+						<div class="mapCompanyAddresButton">
+							<a href="" class="mapCompanyAddresLink">НАПИШИТЕ НАМ</a>
+						</div>
+					</div>
+					<!-- mapCompanyAddres -->
+					<div class="mapPic"><span>Nerds</span></div>
+				</div>
+			</article>
+		<article class="footerBottomBlock">
+			<div class="centerLayout">
+				<ul class="footerSocialList">
+					<li class="footerSocialItem"><a href="" class="footerSocialLink"><span>Vk</span><i class="icon-vk"></i></a></li>
+					<li class="footerSocialItem"><a href="" class="footerSocialLink"><span>Fb</span><i class="icon-facebook"></i></a></li>
+					<li class="footerSocialItem"><a href="" class="footerSocialLink"><span>Ig</span><i class="icon-instagramm"></i></a></li>
+				</ul>
+				<!-- footerSocialList -->
+				<div class="footerDomments">
+					<h3 class="footerDommentsHead">Давайте дружить, это выгодно!</h3>
+					<p class="footerDommentsText">Скидка 10% для друзей из социальных сетей.</p>
+				</div>
+			</div>
+			<!-- centerLayout -->
+		</article>
+		<!-- footerBottomBlock -->
+	</footer>
+</body>
+</html>

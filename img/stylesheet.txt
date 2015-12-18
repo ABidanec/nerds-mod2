@@ -1,0 +1,23 @@
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-green-feature {
+    width: 240px;
+    height: 124px;
+    background-position: -10px -10px;
+}
+
+.sprite-red-feature {
+    width: 240px;
+    height: 124px;
+    background-position: -270px -10px;
+}
+
+.sprite-yellow-feature {
+    width: 240px;
+    height: 124px;
+    background-position: -530px -10px;
+}

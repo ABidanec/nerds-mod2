@@ -1,0 +1,287 @@
+/*slider*/
+.topSlider{
+	position: relative;
+}
+	.topSliderList{
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+
+	.topSliderItem{
+		min-height: 352px;
+		}
+
+		.topSliderHeader{
+			font-family: "RobotoMedium", sans-serif; 
+			font-size:36px;
+			line-height: 1;
+			padding: 74px 0 0;
+			margin:0;
+		}
+
+		.topSliderDesc{
+			font-size:16px;
+			color:#283136;
+			margin:0 0 28px 0;
+		}
+
+		.topSliderButton{
+			float:left;
+			background: #fb565a;
+			border-radius: 4px;
+		}
+			.topSliderButtonLink{
+				display: block;
+				color:#fff;
+				text-transform: uppercase;
+				text-decoration: none;
+				font-family: "RobotoMedium", sans-serif;
+				font-size:12px;
+				padding: 11px 70px;
+			}
+		
+
+
+
+		.slid1{
+			background: url("../pic/slid1.png") 540px 52px no-repeat;
+		}
+
+		.slid2{
+			background: url("../pic/slid2.png") 639px 56px no-repeat;
+		}
+
+		.slid3{
+			background: url("../pic/slid3.png") 539px 33px no-repeat;
+		}
+
+.topSliderNavList{
+	position: absolute;
+	top:247px;
+	left:46%;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+	.topSliderNavItem{
+		float:left;
+		width:10px;
+		height:10px;
+		background: #fff;
+		border-radius: 50%;
+		margin:0 9px 0 0;
+	}
+		.topSliderNavItemActive{
+			background: #fff url("../img/sliderNavBg.png") 50% 50% no-repeat;
+		}
+		.topSliderNavLink{
+			display: block;
+			text-decoration: none;
+			height:10px;
+			color:#c1c1c1;
+			font-size:10px;
+		}
+/*end slider*/
+
+/*featuresList*/
+.featuresList{
+	margin: 80px 0 0 0;
+	padding: 0;
+	list-style: none;
+}
+	.feature1, .feature2, .feature3{
+		float:left;
+		width:240px;
+		margin: 0 0 0 80px;
+		padding: 146px 0 0;
+	}
+
+		.feature1{
+			margin:0;
+			background: url("../img/spriteFeatures.png") -270px -10px no-repeat;
+		}
+
+		.feature2{
+			background: url("../img/spriteFeatures.png") -10px -10px no-repeat;
+		}
+
+		.feature3{
+			background: url("../img/spriteFeatures.png") -530px -10px no-repeat;
+		}
+
+	.featuresHead{
+		font-size:18px;
+		line-height: 1.7;
+		text-transform: uppercase;
+		margin:0;
+		padding: 0;
+	}
+		.featuresDesc{
+			margin:0 0 24px 0;
+		}
+
+		.featuresDesc p{
+			margin: 14px 0 0;
+		}
+
+	.featuresButton{
+		float:left;
+		border-radius: 4px;
+	}
+		.featuresButtonLink{
+			display: block;
+			color:#fff;
+			text-transform: uppercase;
+			text-decoration: none;
+			font-family: "RobotoMedium", sans-serif;
+			font-size:12px;
+			padding: 11px 39px;
+			}
+				.feature1 .featuresButton{
+					background: #fb565a;
+				}
+
+				.feature2 .featuresButton{
+					background: #00ca74;
+				}
+
+				.feature3 .featuresButton{
+					background: #efc84a;
+				}
+/*end featuresList*/
+
+
+/*studioDescription*/
+
+.studioDescription{
+	position: relative;
+	margin:81px 0 0;
+	padding: 70px 0 0;
+	background: url("../img/logoBig.png") 671px 59px no-repeat;
+	border-top: 2px solid #eee;
+
+}
+
+	.studioDescriptionLeft{
+		padding: 0 320px 0 0;
+
+	}
+
+		.studioDescriptionHead{
+			font-family: "RobotoMedium", sans-serif;
+			font-size:36px;
+			line-height: 1;
+			margin:0 0 18px 0;
+		}
+
+		.studioDescriptionText{
+			margin:0 0 43px 0;
+		}
+
+		.studioDescriptionRight{
+			position: absolute;
+			top:131px;
+			right:0;
+			width:240px;
+			height:40px;
+			border-bottom:2px solid #eee;
+		}
+			.studioDescriptionYear{
+				position: absolute;
+				top:20px;
+				left:66px;
+				font-family: "RobotoMedium", sans-serif;
+				font-size:16px;
+				line-height: .5;
+				text-transform: uppercase;
+				padding: 0 12px;
+				background: #fff;
+			}
+
+/*end studioDescription*/
+
+/*listsWork*/
+.listsWork{
+	position: relative;
+	border-bottom:2px solid #eee;
+	padding:0 0 52px 0;
+}
+
+
+.listBlockLeft{
+	padding: 0 320px 0 0;
+}
+
+	.listsWorkHead{
+		font-family: "RobotoMedium", sans-serif;
+		font-size:16px;
+		line-height: 1.5;
+		text-transform: uppercase;
+		margin:0 0 21px 0;
+
+
+	}
+	
+	.listWork{
+		margin:0;
+		padding:0;
+		list-style: none;
+	}
+		.listWorkItem{
+			position: relative;
+			padding: 0 0 0 36px;
+			margin: 0 0 21px 0;
+			font-size:16px;
+
+		}
+
+		.listWorkItem:before{
+			position: absolute;
+			content: " ";
+			display: block;
+			top:10px;
+			left:0;
+			width:25px;
+			border-bottom:2px solid #fb565a;
+		}
+
+.listBlockRight{
+	position: absolute;
+	top:0;
+	right:0;
+	width:310px;
+}
+
+/*end listsWork*/
+
+/*accordeonWorksList*/
+.accordeonWorksList{
+	margin: 0 0 84px 0;
+	padding: 42px 0 0 0;
+	list-style: none;
+	height:124px;
+	border-bottom:2px solid #eee;
+}
+	.accordeonWorksItem{
+		float:left;
+		margin:0 0 0 100px;
+	}
+
+		.accordeonWorksItem:first-child{
+			margin:0;
+		}
+
+		.accordeonWorksLink{
+			display: block;
+
+		}
+
+			.accordeonWorksImg{
+				opacity: .2;
+			}
+				.accordeonWorksImg:hover, .accordeonWorksImg:active{
+					opacity: 1;
+				}
+/*end accordeonWorksList*/
+

@@ -1,0 +1,480 @@
+@font-face{
+	font-family: "RobotoLight";
+	src: url("../fonts/Roboto-Light.ttf");
+}
+
+@font-face{
+	font-family: "RobotoMedium";
+	src: url("../fonts/Roboto-Medium.ttf");
+}
+
+
+body{
+	font-family: "RobotoLight", sans-serif;
+	font-size:16px;
+	line-height: 1.4;
+}
+
+.disNone{
+	display: none;
+}
+
+/*ico font & classes*/
+@font-face {
+  font-family: 'symbolsNerds';
+  src: url('../fonts/symbols/symbols-nerds.eot?94604853');
+  src: url('../fonts/symbols/symbols-nerds.eot?94604853#iefix') format('embedded-opentype'),
+       url('../fonts/symbols/symbols-nerds.woff?94604853') format('woff'),
+       url('../fonts/symbols/symbols-nerds.ttf?94604853') format('truetype'),
+       url('../fonts/symbols/symbols-nerds.svg?94604853#symbols-nerds') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'symbols-nerds';
+    src: url('../font/symbols-nerds.svg?94604853#symbols-nerds') format('svg');
+  }
+}
+*/
+ 
+ [class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "symbolsNerds";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+ 
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+     
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+ 
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+ 
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+ 
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+ 
+.icon-basket:before { content: '\62'; } /* 'b' */
+.icon-facebook:before { content: '\66'; } /* 'f' */
+.icon-twitter:before { content: '\74'; } /* 't' */
+.icon-vk:before { content: '\76'; } /* 'v' */
+.icon-up-dir:before { content: '\25b2'; } /* '▲' */
+.icon-down-dir:before { content: '\25bc'; } /* '▼' */
+.icon-circle:before { content: '\25cb'; } /* '○' */
+.icon-circle-dot:before { content: '\25cf'; } /* '●' */
+.icon-check-off:before { content: '\2610'; } /* '☐' */
+.icon-check-on:before { content: '\2611'; } /* '☑' */
+.icon-instagramm:before { content: '📷'; } /* '\1f4f7' */
+
+/*end ico font & classes*/
+
+
+
+/* footer bottom */
+html, body{
+	height:100%;
+}
+
+.wrapper{
+	position: relative;
+	min-height: 100%;
+	height: auto !important;
+	overflow: hidden;
+	zoom: 1;
+}
+	.wrapper:after{
+		content: " ";
+		display: block;
+		height: 632px;
+	}
+
+.footer{
+	height: 632px;
+	margin: -632px 0 0;
+	zoom:1;
+}
+
+/* end footer bottom */
+
+/* clearfix */
+
+.clearfix:after, .container:after{
+	clear:both;
+}
+
+.clearfix:after, .clearfix:before, .container:after, .container:before{
+	content: "";
+	display:table;
+} 
+
+/* end clearfix */
+
+/* center Latout */
+.centerLayout{
+	position: relative;
+	width: 880px;
+	margin:0 auto;
+}
+/* end center Latout */
+
+fieldset{
+	margin: 0;
+	padding: 0;
+	border:none;
+}
+
+/* header */
+.header{
+	background: #eee;
+}
+
+	.topHeader{
+		position: relative;
+		min-height: 84px;
+		clear:both;
+	}
+
+		.logo{
+			position: absolute;
+			top:27px;
+		}
+
+		.topMenu{
+			position: absolute;
+			top:59px;
+			left:295px;
+			/*padding: 59px 138px 0 295px;*/
+		}
+			.topMetuList{
+				margin: 0;
+				padding: 0;
+				list-style: none;
+			}
+				.topMenuItem{
+					float:left;
+					min-height: 57px;
+					padding: 0 22px 11px 22px;
+				}
+					.topMenuLink, .topBasketLink{
+						display: block;
+						padding: 0 0 8px 0;
+						font-family: "RobotoMedium",sans-serif;
+						font-size: 14px;
+						text-decoration: none;
+						text-transform: uppercase;
+						color:#000;
+						
+
+					}
+						.topMenuLink:hover, .topBasketLink:hover{
+							color:#fb565a;
+						}
+
+						.topMenuLink:active, .topBasketLink:active{
+							color:#c0c0c0;
+						}
+
+						.topMenuLinkActive{
+							box-shadow: 0 2px 0 0px #fb565a;
+						}
+
+			.topBasket{
+				position: absolute;
+				top:59px;
+				right:0;
+			}
+				.icon-basket{
+					padding: 0 14px 0 0;
+				}
+
+
+/* end header*/
+
+
+/*mapCompany*/
+
+.mapCompany{
+	position: relative;
+	height:416px;
+	background: url("../pic/map.jpg") center top no-repeat;
+}
+	.mapCompanyAddres{
+		position: absolute;
+		padding: 28px 20px 26px 20px;
+		top:89px;
+		left:0px;
+		width:200px;
+		background: #fff;
+	}
+
+	.mapCompanyAddresHead{
+		font-size:16px;
+		text-transform: uppercase;
+		line-height: 1.5;
+		margin:0 0 14px 0;
+	}
+
+		.mapCompanyAddresHead span{
+			font-family: "RobotoMedium",sans-serif;
+		}
+
+	.mapCompanyAddresText{
+		margin: 0 0 22px 0;
+	}
+	
+		.mapCompanyAddresButton{
+			background: #fb565a;
+			border-radius: 4px
+		}
+
+			.mapCompanyAddresLink{
+					display: block;
+					color:#fff;
+					text-transform: uppercase;
+					text-decoration: none;
+					font-family: "RobotoMedium", sans-serif;
+					font-size:12px;
+					padding: 11px 39px;
+				}
+
+	.mapPic{
+		position: absolute;
+		top:113px;
+		left:680px;
+		width:231px;
+		height: 190px;
+		background: url("../img/mapPicBg.png") 0 0 no-repeat;
+	}
+		.mapPic span{
+			position: absolute;
+			left: -9999px;
+		}
+/*end mapCompany*/
+
+.footerBottomBlock{
+	margin: 77px 0 0;
+}
+
+/*footerSocialList*/
+.footerSocialList{
+	position: absolute;
+	top:0px;
+	left:0;
+	margin: 0;
+	padding: 0;
+	height:62px;
+	list-style: none;
+}
+
+	.footerSocialItem{
+		position: relative;
+		float:left;
+		width:61px;
+		height:61px;
+		background: #e1e1e1;
+		border-radius: 50%;
+		margin:0 0 0 27px;
+	}
+		.footerSocialItem:hover{
+			background: #fb565a;
+		}
+
+		.footerSocialItem:active{
+			background: #d6494d;
+		}
+
+		.footerSocialItem:first-child{
+			margin: 0;
+		}
+
+		.footerSocialLink{
+			display: block;
+			color:#fff;
+			font-size: 23px
+		}
+			.footerSocialLink span{
+				position: absolute;
+				left:-9999px;
+			}
+
+			.icon-vk:before, .icon-facebook:before, .icon-instagramm:before{
+				position: absolute;
+				top:31%;
+				left:23%;
+			}
+/*end footerSocialList*/
+
+/*footerDomments*/
+.footerDomments{
+	padding: 0 0 0 320px;
+}
+
+	.footerDommentsHead{
+		font-family: "RobotoMedium", sans-serif;
+		font-size: 36px;
+		line-height: 1;
+		margin: 0 0 9px 0;
+	}
+
+	.footerDommentsText{
+		margin:0;
+	}
+/*end footerDomments*/
+
+/*popUp*/
+.popUp{
+	position: fixed;
+	top: 2%;
+	left: 30%;
+	width: 469px;
+	min-height: 300px;
+	padding: 53px 80px;
+	background: #fff;
+	box-shadow: 0 20px 40px 0 #000101;
+	z-index: 100;
+
+	display: none;
+}
+
+.popUpLabelText{
+	margin:0 0 8px 0;
+	font-family: "RobotoMedium", sans-serif;
+	font-size:16px;
+}
+
+	.yourName{
+		float:left;
+		width:220px;
+	}
+
+	.yourEmail{
+		display: block;
+		padding: 0 0 0 240px;
+		margin: 0 0 20px 0;
+	}
+		
+		.popUpName, 
+		.popUpEmail{
+			width:187px;
+		}
+
+		.popUpName, 
+		.popUpEmail,
+		.popUpText{
+			border:2px solid #d7dcde;
+			border-radius: 4px;
+			padding: 7px 15px;
+		}
+
+		.popUpText{
+			margin: 0 0 43px 0;
+			width: 426px;
+			height: 95px;
+		}
+		
+		.popUpName, 
+		.popUpEmail,
+		.popUpText{
+			font-family: "RobotoMedium", sans-serif;
+			font-size: 12px;
+			line-height: 1.5;
+			text-transform: uppercase;
+			color:#000;
+		}
+
+		.popUpName::moz-placeholder, 
+		.popUpEmail::moz-placeholder,
+		.popUpText::moz-placeholder{
+			font-family: "RobotoMedium", sans-serif;
+			font-size: 12px;
+			line-height: 1.5;
+			text-transform: uppercase;
+			color:#000;
+		}
+
+		.popUpName::-ms-input-placeholder, 
+		.popUpEmail::-ms-input-placeholder,
+		.popUpText::-ms-input-placeholder{
+			font-family: "RobotoMedium", sans-serif;
+			font-size: 12px;
+			line-height: 1.5;
+			text-transform: uppercase;
+			color:#000;
+		}
+
+		.popUpName:moz-placeholder, 
+		.popUpEmail:moz-placeholder,
+		.popUpText:moz-placeholder{
+			font-family: "RobotoMedium", sans-serif;
+			font-size: 12px;
+			line-height: 1.5;
+			text-transform: uppercase;
+			color:#000;
+		}
+
+		.popUpName::-webkit-input-placeholder, 
+		.popUpEmail::-webkit-input-placeholder,
+		.popUpText::-webkit-input-placeholder{
+			font-family: "RobotoMedium", sans-serif;
+			font-size: 12px;
+			line-height: 1.5;
+			text-transform: uppercase;
+			color:#000;
+		}
+
+		.popUpSend, .popUpreset{
+			float:left;
+			border-radius: 4px;
+			display: block;
+			color:#fff;
+			text-transform: uppercase;
+			text-decoration: none;
+			font-family: "RobotoMedium", sans-serif;
+			font-size:12px;
+			padding: 11px 39px;
+			border:none;
+			width:220px;
+		}
+			.popUpSend{
+				margin:0 20px 0 0;
+				background: #fb565a;
+			}
+
+			.popUpSend:hover{
+				background: #d6494d;
+			}
+
+			.popUpSend:active{
+				background: #b63538;
+			}
+
+			.popUpreset{
+				color:#000;
+				background: #f1f1f1;
+			}
+
+			.popUpreset:hover{
+				background: #e5e5e5;
+			}
+			.popUpreset:active{
+				background: #d5d5d5;
+			}
+/*end popUp*/
